@@ -1,32 +1,25 @@
-Pragyan Sahu - Portfolio Website
+# Amresh Bhuyan - Portfolio Website
 
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+![Material-UI](https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=mui&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 
+## 🌐 Live Website
+**URL:** [https://pragyan-website.web.app](https://pragyan-website.web.app)
 
+## 📱 Website Pages
+- **Home:** `/` - Landing page with introduction
+- **About:** `/about` - Personal and professional background
+- **Services:** `/services` - Offered services and expertise
+- **Skills:** `/skills` - Technical and professional skills
+- **Projects:** `/projects` - Portfolio of work and contributions
+- **Contact:** `/contact` - Get in touch
 
+## 🚀 Tech Stack
 
-
-
-
-🌐 Live Website
-
-URL: https://pragyan643.github.io/Portfolio/
-
-📱 Website Pages
-
-Home: / - Landing page with introduction
-
-About: /about - Personal and academic background
-
-Services: /services - Offered services and learning expertise
-
-Skills: /skills - Technical and professional skills
-
-Projects: /projects - Portfolio of work and contributions
-
-Contact: /contact - Get in touch
-
-🚀 Tech Stack
-Frontend
+### Frontend
+```javascript
 {
   "framework": "React 18",
   "language": "TypeScript",
@@ -37,36 +30,33 @@ Frontend
   "seo": "React Helmet",
   "styling": "CSS Modules + MUI sx"
 }
+```
 
-Deployment & Hosting
+### Deployment & Hosting
+```javascript
 {
-  "hosting": "GitHub Pages / Firebase Hosting",
-  "domain": "pragyan643.github.io",
-  "ssl": "Automatic",
-  "cdn": "GitHub Pages CDN / Firebase CDN",
+  "hosting": "Firebase Hosting",
+  "domain": "pragyan-website.web.app",
+  "ssl": "Automatic by Firebase",
+  "cdn": "Firebase CDN",
   "build-tool": "Create React App"
 }
+```
 
-Features Implemented
+### Features Implemented
+- ✅ Responsive Design (Mobile First)
+- ✅ SEO Optimization
+- ✅ XML Sitemap Generation
+- ✅ Meta Tags & Open Graph
+- ✅ Lazy Loading for Performance
+- ✅ 404 Error Page
+- ✅ Contact Form Integration
+- ✅ Social Media Integration
 
-✅ Responsive Design (Mobile First)
+## 📁 Project Structure
 
-✅ SEO Optimization
-
-✅ XML Sitemap Generation
-
-✅ Meta Tags & Open Graph
-
-✅ Lazy Loading for Performance
-
-✅ 404 Error Page
-
-✅ Contact Form Integration
-
-✅ Social Media Integration
-
-📁 Project Structure
-pragyan-portfolio/
+```bash
+amresh-portfolio/
 ├── public/
 │   ├── index.html
 │   ├── favicon.ico
@@ -103,104 +93,134 @@ pragyan-portfolio/
 ├── firebase.json
 ├── package.json
 └── README.md
+```
 
-🔧 Installation & Setup
-1. Clone the Repository
-git clone https://github.com/pragyan643/Portfolio.git
-cd Portfolio
+## 🔧 Installation & Setup
 
-2. Install Dependencies
+### 1. Clone the Repository
+```bash
+git clone https://github.com/amreshbhuyan/portfolio.git
+cd portfolio
+```
+
+### 2. Install Dependencies
+```bash
 npm install
+```
 
-3. Set Up Environment Variables
-
-Create .env file:
-
-REACT_APP_SITE_URL=https://pragyan643.github.io/Portfolio/
+### 3. Set Up Environment Variables
+Create `.env` file:
+```env
+REACT_APP_SITE_URL=https://pragyan-website.web.app
 REACT_APP_GA_MEASUREMENT_ID=G-XXXXXXXXXX
+```
 
-4. Run Development Server
+### 4. Run Development Server
+```bash
 npm start
+```
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
+## 🚀 Deployment
 
-Open http://localhost:3000
- in your browser.
-
-🚀 Deployment
-Build for Production
+### Build for Production
+```bash
 npm run build
+```
 
-Deploy to Firebase (Optional)
+### Deploy to Firebase
+```bash
+# Login to Firebase
 firebase login
+
+# Initialize Firebase (first time only)
 firebase init
+
+# Deploy
 firebase deploy
 
-📊 SEO Configuration
-Meta Tags in index.html
-<title>Pragyan Sahu | Web Intern | AediaX Tech Private Limited</title>
-<meta name="description" content="Pragyan Sahu is a Web Intern at AediaX Tech Private Limited and student at Gangadhar Meher University." />
-<meta property="og:title" content="Pragyan Sahu | Web Intern at AediaX" />
-<meta property="og:url" content="https://pragyan643.github.io/Portfolio/" />
-<meta property="og:image" content="https://pragyan643.github.io/Portfolio/og-image.png" />
+# Or use npm script
+npm run deploy
+```
 
-XML Sitemap Generation
+## 📊 SEO Configuration
 
+### Meta Tags in `index.html`
+```html
+<title>Amresh Bhuyan | Tech Entrepreneur | Founder & CEO of AediaX</title>
+<meta name="description" content="Amresh Bhuyan is a Tech Entrepreneur, Software Engineer, and Founder & CEO of AediaX Tech Private Limited." />
+<meta property="og:title" content="Amresh Bhuyan | Founder & CEO of AediaX" />
+<meta property="og:url" content="https://pragyan-website.web.app" />
+<meta property="og:image" content="https://pragyan-website.web.app/og-image.png" />
+```
+
+### XML Sitemap Generation
 Automatically generated during build:
-
+```bash
 npm run build
 # Generates: /build/sitemap.xml
+```
 
-🎨 Design System
-Color Palette
+### Submit to Search Engines
+```bash
+npm run submit:sitemap
+```
+
+## 🎨 Design System
+
+### Color Palette
+```css
 {
-  primary: "#0a1a2f",
-  secondary: "#42a5f5",
-  accent: "#667eea",
+  primary: "#0a1a2f",     /* Dark Blue Background */
+  secondary: "#42a5f5",   /* Light Blue Accent */
+  accent: "#667eea",      /* Gradient Start */
   text-primary: "#ffffff",
   text-secondary: "#b0b7c3"
 }
+```
 
-Typography
+### Typography
+- **Primary Font:** Roboto (Material-UI default)
+- **Headings:** 600 weight
+- **Body:** 400 weight, 1.6 line-height
 
-Primary Font: Roboto (Material-UI default)
+## 📈 Performance Optimization
 
-Headings: 600 weight
+### Implemented Features
+1. **Code Splitting** - Lazy loaded page components
+2. **Image Optimization** - Proper sizing and formats
+3. **Caching Strategy** - Firebase headers configuration
+4. **Minification** - Production build optimization
+5. **Tree Shaking** - Remove unused code
 
-Body: 400 weight, 1.6 line-height
+### Lighthouse Scores Target
+- ⚡ Performance: 95+
+- 🔍 SEO: 100
+- 📱 Accessibility: 100
+- 🛠️ Best Practices: 100
 
-📈 Performance Optimization
-Implemented Features
+## 🔗 Important Links
 
-Code Splitting - Lazy loaded page components
+### Personal Links
+```markdown
+- **Portfolio:** [https://pragyan-website.web.app](https://pragyan-website.web.app)
+- **Company:** [https://aediax.com](https://aediax.com)
+- **GitHub:** [https://github.com/amreshbhuyan](https://github.com/amreshbhuyan)
+- **LinkedIn:** [https://linkedin.com/in/amreshbhuyan](https://linkedin.com/in/amreshbhuyan)
+- **Email:** amreshbhuyanone@gmail.com
+```
 
-Image Optimization - Proper sizing and formats
+### Project Links
+```markdown
+- **SUIIT Library:** [https://library.suiit.ac.in](https://library.suiit.ac.in)
+- **Namami India:** [https://namamiindia.co.in](https://namamiindia.co.in)
+- **Flavr Apogi:** [https://flavrapogi.com](https://flavrapogi.com)
+- **Pragati Security:** [https://pragatisecurity.com](https://pragatisecurity.com)
+```
 
-Caching Strategy - Hosting headers configuration
+## 🛠️ Available Scripts
 
-Minification - Production build optimization
-
-Tree Shaking - Remove unused code
-
-Lighthouse Scores Target
-
-⚡ Performance: 95+
-
-🔍 SEO: 100
-
-📱 Accessibility: 100
-
-🛠️ Best Practices: 100
-
-🔗 Important Links
-Personal Links
-- **Portfolio:** https://pragyan643.github.io/Portfolio/
-- **GitHub:** https://pragyan643.github.io
-- **LinkedIn:** https://www.linkedin.com/in/pragyan643
-- **Instagram:** https://www.instagram.com/pragyan643?igsh=MXMwZjE2dzZmZ2RxeA==
-- **YouTube:** https://www.youtube.com/@PRAGYAN_GAMMING
-- **Email:** pragyansahu643@gmail.com
-
-🛠️ Available Scripts
+```json
 {
   "start": "react-scripts start",
   "build": "react-scripts build && node scripts/generate-sitemap.js",
@@ -211,23 +231,26 @@ Personal Links
   "predeploy": "npm run build",
   "deploy": "firebase deploy"
 }
+```
 
-📝 License
+## 📝 License
 
-This project is owned by Pragyan Sahu. All rights reserved.
+This project is proprietary and owned by Amresh Bhuyan. All rights reserved.
 
-🤝 Contact
+## 🤝 Contact
 
 For any queries or collaborations:
 
-Name: Pragyan Sahu
-Role: Web Intern, AediaX Tech Private Limited
-Email: pragyansahu643@gmail.com
-Phone: +91 99379 82318 (WhatsApp)
-Website: https://pragyan643.github.io/Portfolio/
-LinkedIn: https://www.linkedin.com/in/pragyan643
-Instagram: https://www.instagram.com/pragyan643?igsh=MXMwZjE2dzZmZ2RxeA==
-YouTube: https://www.youtube.com/@PRAGYAN_GAMMING
+```yaml
+Name: Amresh Bhuyan
+Role: Founder & CEO, AediaX Tech Private Limited
+Email: amreshbhuyanone@gmail.com
+Official: amreshbhuyan@aediax.com
+Phone: +91 78549 98757 (WhatsApp)
+Website: https://pragyan-website.web.app
+```
 
+---
 
-Built with ❤️ using React
+*Last Updated: January 2024*  
+*Built with ❤️ using React & Firebase*
